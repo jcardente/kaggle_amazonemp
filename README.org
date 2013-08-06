@@ -1,0 +1,17 @@
+#+Title: Kaggle Amazon Employee Access Challenge Source Code
+#+Author: John Cardente
+
+* Overview
+
+This repository contains R source code for the model I developed for
+the Kaggle [[http://www.kaggle.com/c/amazon-employee-access-challenge][Amazon Employee Access Challenge]]. The model worked well 
+with respect to accuracy but didn't achieve a good [[http://en.wikipedia.org/wiki/Receiver_operating_characteristic][area under ROC curve]] 
+score.
+
+* Model
+
+I treated the challenge as a market basket analysis problem. Each observation
+is treated as a basket containing the specific role attributes and resource. 
+I then used traditional [[http://en.wikipedia.org/wiki/Association_rules][association rule]] metrics, specifically confidence, to
+determine the likelihood that each test case would result in an access grant.
+
